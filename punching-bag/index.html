@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <div id="bag" v-bind:class="{ burst : ended}"></div>
+
+        <div id="bag-health">
+            <div v-bind:style="{ width : health + '%' }"></div>
+        </div>
+
+        <div id="bag-controls">
+            <button v-on:click="punch">punch</button>
+            <button v-on:click="restart">restart</button>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
