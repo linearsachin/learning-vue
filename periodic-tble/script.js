@@ -17,15 +17,15 @@ const elementsSymbol = [ "H", "He",
                     "Fr", "Ra",  "Rf", "Db", "Sg", "Bh", "Hs", "Mt","Ds","Rg","Cn","Nh","Fl","Mc","Lv","Ts","Og",
                     "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb","Lu",
                     "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No","Lr", ];
-const elementBlock = [ "s", "p", 
-                    "s", "s", "p", "p", "p","p", "p","p", 
-                    "s", "s", "p", "p", "p", "p", "p", "p", 
-                    "s", "s", "d", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p", "p", "p", "p", 
-                    "s", "s", "d", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p", "p", "p", "p", 
-                    "s", "s", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p", "p", "p", "p", 
-                    "s", "s", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p", "p", "p", "p",
-                    "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f",
-                    "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", "f", ];
+const elementBlock = [ "s", "p noble", 
+                    "s alkali", "s alkali-earth", "p metalloid", "p", "p","p", "p halo","p noble", 
+                    "s alkali", "s alkali-earth", "p", "p metalloid", "p", "p", "p halo", "p noble", 
+                    "s alkali", "s alkali-earth", "d", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p metalloid", "p metalloid", "p", "p halo", "p noble", 
+                    "s alkali", "s alkali-earth", "d", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p metalloid", "p metalloid", "p halo", "p noble", 
+                    "s alkali", "s alkali-earth", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p", "p metalloid", "p halo", "p noble", 
+                    "s alkali", "s alkali-earth", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p", "p", "p", "p halo", "p noble",
+                    "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan", "f lan",
+                    "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", "f act", ];
 new Vue ({
     el:"#app",
     data:{
