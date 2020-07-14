@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@2.6.11/dist/vue.js"></script>
+    <title>Periodic Table</title>
+    <style>
+        .s {
+            background-color: lightskyblue;
+            color: black;
+            margin: 0;
+            padding: 2em;
+            border:0.1px solid white;
+            text-align: center;
+        }
+        .d {
+            background-color: #ffaca6;
+            color: black;
+            margin: 0;
+            padding: 2em;
+            border:0.1px solid white;
+            text-align: center;
+        }
+        .p {
+            background-color: #f4b2f7;
+            color: black;
+            margin: 0;
+            padding: 2em;
+            border:0.1px solid white;
+            text-align: center;  
+        }
+        .f {
+            background-color: #a3ffa8;
+            color: black;
+            margin: 0;
+            padding: 2em;
+            border:0.1px solid white;
+            text-align: center;  
+        }
+
+        #table {
+            display: inline-grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-template-areas:
+                ".  wa wb wb wb wb wb wb wb wb wb wb wz wz wz wz wz ."
+                ".  .  wb wb wb wb wb wb wb wb wb wb .  .  .  .  .  ."
+                ".  .  wb wb wb wb wb wb wb wb wb wb .  .  .  .  .  ."
+                ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+                ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+                ".  .  wc .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+                ".  .  wc .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+                "wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd"
+                "we we .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  wg"
+                "wf wf .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . ";
+            border-collapse: collapse;
+        }
+
+        #wa {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wa;
+        }
+        #wb {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wb;
+        }
+        #wc {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wc;
+        }
+        #wd {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wd;
+        }
+        #we {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: we;
+        }
+        #wf {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wf;
+        }
+        #wz {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wz;
+        }
+        #wg {
+            box-sizing: border-box;
+            background-color: white;
+            grid-area: wg;
+        }
+        #ele {
+            text-align: center;
+            font-family: system-ui;
+            padding: 1.5em;
+            border: 0.1px solid white;
+            color: black;
+            margin: 0;
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <div id="table">
+                <div id="wa"></div>
+                <div id="wb"></div>
+                <div id="wc"></div>
+                <div id="wd"><br><br></div>
+                <div id="we"></div>
+                <div id="wf"></div>
+                <div id="wg"></div>
+                <div id="wz"></div>
+                <div id="ele" v-for="element,index in elements" v-bind:class="blocks[index]">
+                    <div id="symbol">{{ symbols[index] }}</div>
+                    <div id="name"><small> {{ element }} </small></div>
+                </div>
+            </div>
+            <table>
+                
+
+            </table>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
