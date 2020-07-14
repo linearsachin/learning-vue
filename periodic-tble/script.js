@@ -17,7 +17,7 @@ const elementsSymbol = [ "H", "He",
                     "Fr", "Ra",  "Rf", "Db", "Sg", "Bh", "Hs", "Mt","Ds","Rg","Cn","Nh","Fl","Mc","Lv","Ts","Og",
                     "La", "Ce", "Pr", "Nd", "Pm", "Sm", "Eu", "Gd", "Tb", "Dy", "Ho", "Er", "Tm", "Yb","Lu",
                     "Ac", "Th", "Pa", "U", "Np", "Pu", "Am", "Cm", "Bk", "Cf", "Es", "Fm", "Md", "No","Lr", ];
-const elementBlock = [ "s", "p noble", 
+const elementBlock = [ "s polyatomic-nonmetal", "p noble", 
                     "s alkali", "s alkali-earth", "p metalloid", "p", "p","p", "p halo","p noble", 
                     "s alkali", "s alkali-earth", "p", "p metalloid", "p", "p", "p halo", "p noble", 
                     "s alkali", "s alkali-earth", "d", "d", "d", "d", "d", "d", "d", "d", "d", "d", "p", "p metalloid", "p metalloid", "p", "p halo", "p noble", 
