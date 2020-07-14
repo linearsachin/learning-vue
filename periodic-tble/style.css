@@ -1,0 +1,136 @@
+.s {
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;
+}
+.d {
+    background-color: #ffaca6;
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;
+}
+.p {
+    background-color: #f4b2f7;
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;  
+}
+.f {
+    
+    color: black;
+    margin: 0;
+    padding: 2em;
+    border:0.1px solid white;
+    text-align: center;  
+}
+.polyatomic-nonmetal {
+    background-color: #0089df;
+}
+.alkali {
+    background-color: #36b2ff;
+}
+.alkali-earth {
+    background-color: #87cefa;
+}
+.lan {
+    background-color: #a3ffa8;
+}
+.act {
+    background-color: #4db853;
+}
+.metalloid {
+    background-color: #f765ff;
+}
+.halo {
+    background-color: #e236ee;
+    color: white;
+}
+.noble {
+    background-color: #b64fff;
+}
+
+
+#out-table {
+    width: 100%;
+}
+#table {
+    margin: 2.5em 2.5em;
+    display: inline-grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-areas:
+        ".  wa wb wb wb wb wb wb wb wb wb wb wz wz wz wz wz ."
+        ".  .  wb wb wb wb wb wb wb wb wb wb .  .  .  .  .  ."
+        ".  .  wb wb wb wb wb wb wb wb wb wb .  .  .  .  .  ."
+        ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        ".  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        ".  .  wc .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        ".  .  wc .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+        "wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd wd"
+        "we we .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  wg"
+        "wf wf .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  . ";
+    border-collapse: collapse;
+}
+
+#wa {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wa;
+}
+#wb {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wb;
+}
+#wc {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wc;
+}
+#wd {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wd;
+}
+#we {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: we;
+}
+#wf {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wf;
+}
+#wz {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wz;
+}
+#wg {
+    box-sizing: border-box;
+    background-color: white;
+    grid-area: wg;
+}
+#ele {
+    text-align: center;
+    font-family: system-ui;
+    padding: 0em;
+    border: 0.1px solid white;
+    color: black;
+    margin: 0;
+}
+.atomic-number{
+    padding-left: 8px;
+    padding-top:  8px;
+    text-align: left;
+
+}
+#name, #symbol{
+    margin: 1em;
+}
