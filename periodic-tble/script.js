@@ -57,6 +57,14 @@ var popup = document.getElementById("popup-info");
 var span = document.getElementsByClassName("close")[0];
 let showInfo = document.querySelectorAll("#ele");
 
+function check(params) {
+    if (params ==="") {
+        return "-"
+    }else{
+        return params
+    }
+    
+}
 
 Array.from(showInfo).forEach(element => {
     element.addEventListener("click", () => {
@@ -67,12 +75,14 @@ Array.from(showInfo).forEach(element => {
             if (this.readyState == 4 && this.status == 200) {
                 var myArr = JSON.parse(this.responseText);
                 console.log(myArr)
-                document.getElementById("popup-name").innerHTML=myArr['name']
-                document.getElementById("atomic-number").innerHTML=myArr['atomicNumber']
-                document.getElementById("atomic-mass").innerHTML=myArr['atomicMass']
-                document.getElementById("atomic-radius").innerHTML=myArr['atomicRadius']
-                document.getElementById("boiling-point").innerHTML=myArr['boilingPoint']
-                document.getElementById("bonding-type").innerHTML=myArr['bondingType']
+                document.getElementById("popup-name").innerHTML=check(myArr['name'])
+                document.getElementById("atomic-number").innerHTML=check(myArr['atomicNumber'])
+                document.getElementById("atomic-mass").innerHTML=check(myArr['atomicMass'])
+                document.getElementById("atomic-radius").innerHTML=check(myArr['atomicRadius'])
+                document.getElementById("boiling-point").innerHTML=check(myArr['boilingPoint'])
+                document.getElementById("bonding-type").innerHTML=check(myArr['bondingType'])
+                document.getElementById("electronic-config").innerHTML=check(myArr['electronicConfiguration'])
+                
             }
         };
         xmlhttp.open("GET", url, true);
