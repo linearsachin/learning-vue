@@ -19,14 +19,46 @@
                 <div id="wf"></div>
                 <div id="wg"></div>
                 <div id="wz"></div>
-                <div id="ele" v-for="element,index in elements" v-bind:class="blocks[index]">
+                <div id="ele" v-for="element,index in elements" v-bind:class="blocks[index]" v-bind:data-atomic-target="atomicNo[index]">
                     <div class="atomic-number">{{ atomicNo[index]}}</div>
                     <div id="symbol">{{ symbols[index] }}</div>
                     <div id="name"><small> {{ element }} </small></div>
                 </div>
             </div>
+        
 
         </div>
+        <div id="popup-info" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1 id="popup-name"></h1>
+              <br>
+              <table>
+                  <tr>
+                      <td>Atomic Number:</td>
+                      <td id="atomic-number"></td>
+                  </tr>
+                  <tr>
+                    <td>Atomic Mass:</td>
+                    <td id="atomic-mass"></td>
+                </tr>
+                <tr>
+                    <td>Atomic Radius:</td>
+                    <td id="atomic-radius"></td>
+                </tr>
+                <tr>
+                    <td>Boiling Point:</td>
+                    <td id="boiling-point"></td>
+                </tr>
+                <tr>
+                    <td>Bonding Type:</td>
+                    <td id="bonding-type"></td>
+                </tr>
+
+              </table>
+            </div>
+        </div>
+        
     </div>
 </body>
 <script src="script.js"></script>
